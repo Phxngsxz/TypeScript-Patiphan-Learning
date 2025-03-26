@@ -163,3 +163,18 @@ class Person {
 
 const person = new Person("Mai");
 console.log(person.getName());
+
+// Typescript Generics
+
+function identity<T>(value: T): T {
+  return value;
+}
+
+const result = identity<number>(123);
+const resultStr = identity("I love typescript");
+console.log(result);
+console.log(typeof(resultStr));
+
+
+
+
