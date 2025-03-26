@@ -141,4 +141,9 @@ function add(a: number, b: number, ...arr: number[]) {
 
 }
 
-//
+// Typescript Casting
+// as
+
+let someVar: unknown = 'hello';
+console.log((<string>someVar).length);
+
