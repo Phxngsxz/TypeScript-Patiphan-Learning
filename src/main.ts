@@ -33,3 +33,11 @@ console.log(names);
 let Tuple: readonly [myNum: number,myBoo: boolean,myString: string ] = [10, true, "Typescript is great"];
 let [myNum , myBoo, myStr] = Tuple;
 console.log(myNum, myBoo , myStr);
+
+// TypeScript Object Types
+
+const car: {type: string, model: string, year: number } = {
+    type: "Honda",
+    model: "Civic",
+    year: 2025
+}
