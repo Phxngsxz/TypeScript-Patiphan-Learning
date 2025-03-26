@@ -83,7 +83,7 @@ type Car = {
 const carYear: CarYear = 2023;
 const carType: CarType = "Honda";
 const carModel: CarModel = "Civic";
-const car: Car ={ 
+const myCar: Car ={ 
   year: carYear,
   type: carType,
   model: carModel
@@ -105,3 +105,12 @@ const reactangel: ColoredRectangle = {
   width: 10,
   color: "red"
 }
+
+// Union Types
+
+function statusCode(code: string | number) {
+    console.log(`My status code is ${code}`);
+}
+
+statusCode(404);
+statusCode("404");
