@@ -1,24 +1,13 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+// Simple Types
+// Main primitives = boolean, number, string
+// Less common primitives = bigint, symbol
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+// Type Assignment 1. Explicit 2. Implicit
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+// 1. Explicit
+let firstName: string = "Kagenoudev";
+let age: number = 20;
+let married: boolean = false;
+
+// 2. Imlicit
+let lastName = "Somsin";
