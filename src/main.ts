@@ -147,3 +147,19 @@ function add(a: number, b: number, ...arr: number[]) {
 let someVar: unknown = 'hello';
 console.log((<string>someVar).length);
 
+// Typescirpt Classes
+
+class Person {
+  private name: string;
+
+  public constructor(name: string){
+    this.name = name;
+  }
+
+  public getName(): string {
+    return this.name;
+  }
+}
+
+const person = new Person("Mai");
+console.log(person.getName());
