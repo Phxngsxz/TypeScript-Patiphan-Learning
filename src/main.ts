@@ -30,17 +30,21 @@ console.log(names);
 
 // Define our tuple
 
-let Tuple: readonly [myNum: number,myBoo: boolean,myString: string ] = [10, true, "Typescript is great"];
-let [myNum , myBoo, myStr] = Tuple;
-console.log(myNum, myBoo , myStr);
+let Tuple: readonly [myNum: number, myBoo: boolean, myString: string] = [
+  10,
+  true,
+  "Typescript is great",
+];
+let [myNum, myBoo, myStr] = Tuple;
+console.log(myNum, myBoo, myStr);
 
 // TypeScript Object Types
 
-const car: {type: string, model: string, year: number } = {
-    type: "Honda",
-    model: "Civic",
-    year: 2025
-}
+const car: { type: string; model: string; year: number } = {
+  type: "Honda",
+  model: "Civic",
+  year: 2025,
+};
 
 // TypeScript Enums
 
@@ -48,22 +52,22 @@ enum Employees {
   Id, //0
   FirstName, //1
   LastName, //2
-  age,//3
-  Position //4
+  age, //3
+  Position, //4
 }
 
 enum StatusCode {
-    NotFound = 404,
-    Success = 200,
-    Accepted = 202,
-    BadRequest = 400
+  NotFound = 404,
+  Success = 200,
+  Accepted = 202,
+  BadRequest = 400,
 }
 
 enum CarLists {
   firstCar = "Honda",
   secondCar = "BMW",
   thirdCar = "Benz",
-  fourthCar = "Maclaren"
+  fourthCar = "Maclaren",
 }
 
 console.log(CarLists.firstCar);
@@ -75,42 +79,66 @@ type CarType = string;
 type CarModel = string;
 
 type Car = {
-  year: CarYear,
-  type: CarType,
-  model: CarModel
-}
+  year: CarYear;
+  type: CarType;
+  model: CarModel;
+};
 
 const carYear: CarYear = 2023;
 const carType: CarType = "Honda";
 const carModel: CarModel = "Civic";
-const myCar: Car ={ 
+const myCar: Car = {
   year: carYear,
   type: carType,
-  model: carModel
-}
+  model: carModel,
+};
 
 // Typescript Interfaces
 
 interface Rectangle {
-    height: number,
-    width: number
+  height: number;
+  width: number;
 }
 
 interface ColoredRectangle extends Rectangle {
-  color: string
+  color: string;
 }
 
 const reactangel: ColoredRectangle = {
   height: 20,
   width: 10,
-  color: "red"
-}
+  color: "red",
+};
 
 // Union Types
 
 function statusCode(code: string | number) {
-    console.log(`My status code is ${code}`);
+  console.log(`My status code is ${code}`);
 }
 
 statusCode(404);
 statusCode("404");
+
+// Functions
+
+function getTime(): number {
+  return new Date().getTime();
+}
+
+function printHellow(): void {
+  console.log("Hello!");
+}
+
+function multiply(a: number, b: number, c: number = 10) {
+  return a * b + c;
+}
+
+function divide({ divided, dividsor }: { divided: number; divisor: number }) {
+  return divided / dividsor;
+}
+
+function add(a: number, b: number, ...arr: number[]) {
+
+}
+
+//
