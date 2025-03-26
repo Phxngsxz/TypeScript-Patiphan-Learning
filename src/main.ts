@@ -27,3 +27,9 @@ let z: null = null;
 const names: readonly number[] = [1, 2, 3];
 names.push("Mai");
 console.log(names);
+
+// Define our tuple
+
+let Tuple: readonly [myNum: number,myBoo: boolean,myString: string ] = [10, true, "Typescript is great"];
+let [myNum , myBoo, myStr] = Tuple;
+console.log(myNum, myBoo , myStr);
