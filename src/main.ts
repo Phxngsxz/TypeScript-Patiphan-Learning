@@ -41,3 +41,29 @@ const car: {type: string, model: string, year: number } = {
     model: "Civic",
     year: 2025
 }
+
+// TypeScript Enums
+
+enum Employees {
+  Id, //0
+  FirstName, //1
+  LastName, //2
+  age,//3
+  Position //4
+}
+
+enum StatusCode {
+    NotFound = 404,
+    Success = 200,
+    Accepted = 202,
+    BadRequest = 400
+}
+
+enum CarLists {
+  firstCar = "Honda",
+  secondCar = "BMW",
+  thirdCar = "Benz",
+  fourthCar = "Maclaren"
+}
+
+console.log(CarLists.firstCar);
