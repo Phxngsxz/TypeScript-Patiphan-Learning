@@ -20,4 +20,10 @@ array = {};
 let x: never = "Mai";
 
 let y: undefined = undefined;
-let z: null = null;``
+let z: null = null;
+
+// TypeScript Arrays
+
+const names: readonly number[] = [1, 2, 3];
+names.push("Mai");
+console.log(names);
