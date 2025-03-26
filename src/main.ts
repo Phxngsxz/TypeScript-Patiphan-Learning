@@ -11,3 +11,13 @@ let married: boolean = false;
 
 // 2. Imlicit
 let lastName = "Somsin";
+
+// Special Types = any, unknown, never, undefined & null
+
+let array: unknown = [];
+array = {};
+
+let x: never = "Mai";
+
+let y: undefined = undefined;
+let z: null = null;``
